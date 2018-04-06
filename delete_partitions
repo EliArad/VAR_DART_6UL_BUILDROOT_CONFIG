@@ -1,0 +1,3 @@
+ (echo rm; echo 1;)   | sudo parted /dev/sd$1
+ (echo rm; echo 2;)   | sudo parted /dev/sd$1
+sync

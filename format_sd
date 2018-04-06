@@ -1,0 +1,2 @@
+sudo mkfs.ext4 -F  -L ROOTFS /dev/sd$12
+sudo mkfs.fat -F16   /dev/sd$11

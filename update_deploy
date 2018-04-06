@@ -1,0 +1,6 @@
+sudo umount /mnt/VARBOOT/
+sudo mount /dev/sd$11 /mnt/VARBOOT/
+sudo cp /media/elia/e6931503-f01e-4d6f-8864-4f510792c6ca/yocto/imx6ul_linux/linux-imx/arch/arm/boot/dts/*var-dart*.dtb  output/images
+sudo cp output/images/imx6ull-var-dart-sd_emmc.dtb  /mnt/VARBOOT
+sudo cp output/images/zImage  /mnt/VARBOOT
+sudo ls /mnt/VARBOOT

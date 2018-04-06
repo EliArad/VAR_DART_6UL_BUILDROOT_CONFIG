@@ -1,0 +1,6 @@
+cp /media/elia/e6931503-f01e-4d6f-8864-4f510792c6ca/yocto/imxul_uboot/uboot-imx/SPL*  output/images
+sudo ./delete_partitions $1
+sudo ./create_partitions $1
+sudo ./deplay_uboot  $1
+sudo ./update_deploy $1
+sudo ./update_rootfs  $1

@@ -1,0 +1,9 @@
+
+(echo mkpart; echo primary ; echo fat16; echo 1; echo 1000;) | sudo  parted  /dev/sd$1
+sync
+sudo mkfs.fat -F16   /dev/sd$11
+
+
+(echo mkpart; echo primary ; echo ext4; echo 1000;  echo 5000;) | sudo  parted /dev/sd$1
+sudo mkfs.ext4 -F  -L ROOTFS /dev/sd$12
+sync
